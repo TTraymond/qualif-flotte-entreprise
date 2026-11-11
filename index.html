@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Qualif'Flotte Pro 2026 — Comparateur de financement pour la concession (version entreprise)</title>
+    <style>
+/*! tailwindcss v4.3.3 | MIT License | https://tailwindcss.com */
+@layer properties;
+@layer theme {
+  :root, :host {
+    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-red-700: oklch(50.5% 0.213 27.518);
+    --color-amber-50: oklch(98.7% 0.022 95.277);
+    --color-amber-100: oklch(96.2% 0.059 95.617);
+    --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
+    --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-amber-800: oklch(47.3% 0.137 46.201);
+    --color-amber-900: oklch(41.4% 0.112 45.904);
+    --color-emerald-50: oklch(97.9% 0.021 166.113);
+    --color-emerald-100: oklch(95% 0.052 163.051);
+    --color-emerald-200: oklch(90.5% 0.093 164.15);
+    --color-emerald-300: oklch(84.5% 0.143 164.978);
+    --color-emerald-400: oklch(76.5% 0.177 163.223);
+    --color-emerald-500: oklch(69.6% 0.17 162.48);
+    --color-emerald-700: oklch(50.8% 0.118 165.612);
+    --color-emerald-800: oklch(43.2% 0.095 166.913);
+    --color-emerald-900: oklch(37.8% 0.077 168.94);
+    --color-teal-400: oklch(77.7% 0.152 181.912);
+    --color-teal-700: oklch(51.1% 0.096 186.391);
+    --color-sky-50: oklch(97.7% 0.013 236.62);
+    --color-sky-200: oklch(90.1% 0.058 230.902);
+    --color-sky-300: oklch(82.8% 0.111 230.318);
+    --color-sky-800: oklch(44.3% 0.11 240.79);
+    --color-sky-900: oklch(39.1% 0.09 240.876);
+    --color-blue-400: oklch(70.7% 0.165 254.624);
+    --color-blue-700: oklch(48.8% 0.243 264.376);
+    --color-rose-50: oklch(96.9% 0.015 12.422);
+    --color-rose-200: oklch(89.2% 0.058 10.001);
+    --color-rose-700: oklch(51.4% 0.222 16.935);
+    --color-rose-800: oklch(45.5% 0.188 13.697);
+    --color-slate-50: oklch(98.4% 0.003 247.858);
+    --color-slate-100: oklch(96.8% 0.007 247.896);
+    --color-slate-200: oklch(92.9% 0.013 255.508);
+    --color-slate-300: oklch(86.9% 0.022 252.894);
+    --color-slate-400: oklch(70.4% 0.04 256.788);
+    --color-slate-500: oklch(55.4% 0.046 257.417);
+    --color-slate-600: oklch(44.6% 0.043 257.281);
+    --color-slate-700: oklch(37.2% 0.044 257.287);
+    --color-slate-800: oklch(27.9% 0.041 260.031);
+    --color-slate-900: oklch(20.8% 0.042 265.755);
+    --color-slate-950: oklch(12.9% 0.042 264.695);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-400: oklch(70.7% 0.022 261.325);
+    --color-zinc-500: oklch(55.2% 0.016 285.938);
+    --color-zinc-900: oklch(21% 0.006 285.885);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --container-md: 28rem;
+    --container-7xl: 80rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
+    --text-sm: 0.875rem;
+    --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+    --tracking-tight: -0.025em;
+    --tracking-wider: 0.05em;
+    --leading-tight: 1.25;
+    --leading-snug: 1.375;
+    --leading-relaxed: 1.625;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --default-transition-duration: 150ms;
+    --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --default-font-family: var(--font-sans);
+    --default-mono-font-family: var(--font-mono);
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0 solid;
+  }
+  html, :host {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    tab-size: 4;
+    font-family: var(--default-font-family, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji');
+    font-feature-settings: var(--default-font-feature-settings, normal);
+    font-variation-settings: var(--default-font-variation-settings, normal);
+    -webkit-tap-highlight-color: transparent;
+  }
+  hr {
+    height: 0;
+    color: inherit;
+    border-top-width: 1px;
+  }
+  abbr:where([title]) {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+  a {
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+  }
+  b, strong {
+    font-weight: bolder;
+  }
+  code, kbd, samp, pre {
+    font-family: var(--default-mono-font-family, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace);
+    font-feature-settings: var(--default-mono-font-feature-settings, normal);
+    font-variation-settings: var(--default-mono-font-variation-settings, normal);
+    font-size: 1em;
+  }
+  small {
+    font-size: 80%;
+  }
+  sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+  sup {
+    top: -0.5em;
+  }
+  table {
+    text-indent: 0;
+    border-color: inherit;
+    border-collapse: collapse;
+  }
+  :-moz-focusring:where(:not(iframe)) {
+    outline: auto;
+  }
+  progress {
+    vertical-align: baseline;
+  }
+  summary {
+    display: list-item;
+  }
+  ol, ul, menu {
+    list-style: none;
+  }
+  img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    vertical-align: middle;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  button, input, select, optgroup, textarea, ::file-selector-button {
+    font: inherit;
+    font-feature-settings: inherit;
+    font-variation-settings: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
+  }
+  :where(select:is([multiple], [size])) optgroup {
+    font-weight: bolder;
+  }
+  :where(select:is([multiple], [size])) optgroup option {
+    padding-inline-start: 20px;
+  }
+  ::file-selector-button {
+    margin-inline-end: 4px;
+  }
+  ::placeholder {
+    opacity: 1;
+  }
+  @supports (not (-webkit-appearance: -apple-pay-button))  or (contain-intrinsic-size: 1px) {
+    ::placeholder {
+      color: currentcolor;
+      @supports (color: color-mix(in lab, red, red)) {
+        color: color-mix(in oklab, currentcolor 50%, transparent);
+      }
+    }
+  }
+  textarea {
+    resize: vertical;
+  }
+  ::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  ::-webkit-date-and-time-value {
+    min-height: 1lh;
+    text-align: inherit;
+  }
+  ::-webkit-datetime-edit {
+    display: inline-flex;
+  }
+  ::-webkit-datetime-edit-fields-wrapper {
+    padding: 0;
+  }
+  ::-webkit-datetime-edit, ::-webkit-datetime-edit-year-field, ::-webkit-datetime-edit-month-field, ::-webkit-datetime-edit-day-field, ::-webkit-datetime-edit-hour-field, ::-webkit-datetime-edit-minute-field, ::-webkit-datetime-edit-second-field, ::-webkit-datetime-edit-millisecond-field, ::-webkit-datetime-edit-meridiem-field {
+    padding-block: 0;
+  }
+  ::-webkit-calendar-picker-indicator {
+    line-height: 1;
+  }
+  :-moz-ui-invalid {
+    box-shadow: none;
+  }
+  button, input:where([type='button'], [type='reset'], [type='submit']), ::file-selector-button {
+    appearance: button;
+  }
+  ::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+    height: auto;
+  }
+  [hidden]:where(:not([hidden='until-found'])) {
+    display: none !important;
+  }
+}
+@layer utilities {
+  .fixed {
+    position: fixed;
+  }
+  .top-4 {
+    top: calc(var(--spacing) * 4);
+  }
+  .right-0 {
+    right: 0px;
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
+  }
+  .bottom-0 {
+    bottom: 0px;
+  }
+  .left-0 {
+    left: 0px;
+  }
+  .left-4 {
+    left: calc(var(--spacing) * 4);
+  }
+  .z-40 {
+    z-index: 40;
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .mt-0\.5 {
+    margin-top: calc(var(--spacing) * 0.5);
+  }
+  .mt-1 {
+    margin-top: var(--spacing);
+  }
+  .mt-1\.5 {
+    margin-top: calc(var(--spacing) * 1.5);
+  }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-3 {
+    margin-top: calc(var(--spacing) * 3);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mb-1 {
+    margin-bottom: var(--spacing);
+  }
+  .mb-1\.5 {
+    margin-bottom: calc(var(--spacing) * 1.5);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .ml-auto {
+    margin-left: auto;
+  }
+  .block {
+    display: block;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+  }
+  .hidden {
+    display: none;
+  }
+  .inline-block {
+    display: inline-block;
+  }
+  .table {
+    display: table;
+  }
+  .h-4 {
+    height: calc(var(--spacing) * 4);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
+  }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
+  .h-16 {
+    height: calc(var(--spacing) * 16);
+  }
+  .min-h-\[42px\] {
+    min-height: 42px;
+  }
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
+  }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-7xl {
+    max-width: var(--container-7xl);
+  }
+  .max-w-\[180px\] {
+    max-width: 180px;
+  }
+  .max-w-md {
+    max-width: var(--container-md);
+  }
+  .min-w-0 {
+    min-width: 0px;
+  }
+  .min-w-\[620px\] {
+    min-width: 620px;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .-translate-y-2 {
+    --tw-translate-y: calc(var(--spacing) * -2);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .flex-col {
+    flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .gap-1 {
+    gap: var(--spacing);
+  }
+  .gap-1\.5 {
+    gap: calc(var(--spacing) * 1.5);
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
+  .gap-2\.5 {
+    gap: calc(var(--spacing) * 2.5);
+  }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
+  :where(.space-y-1 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(var(--spacing) * var(--tw-space-y-reverse));
+    margin-block-end: calc(var(--spacing) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-1\.5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 1.5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 1.5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-2 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-3 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 3) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-4 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 4) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.space-y-5 > :not(:last-child)) {
+    --tw-space-y-reverse: 0;
+    margin-block-start: calc(calc(var(--spacing) * 5) * var(--tw-space-y-reverse));
+    margin-block-end: calc(calc(var(--spacing) * 5) * calc(1 - var(--tw-space-y-reverse)));
+  }
+  :where(.divide-y > :not(:last-child)) {
+    --tw-divide-y-reverse: 0;
+    border-bottom-style: var(--tw-border-style);
+    border-top-style: var(--tw-border-style);
+    border-top-width: calc(1px * var(--tw-divide-y-reverse));
+    border-bottom-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  }
+  :where(.divide-slate-100 > :not(:last-child)) {
+    border-color: var(--color-slate-100);
+  }
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .overflow-x-auto {
+    overflow-x: auto;
+  }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-t-2 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-amber-200 {
+    border-color: var(--color-amber-200);
+  }
+  .border-amber-300 {
+    border-color: var(--color-amber-300);
+  }
+  .border-amber-400\/40 {
+    border-color: color-mix(in srgb, oklch(82.8% 0.189 84.429) 40%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-amber-400) 40%, transparent);
+    }
+  }
+  .border-blue-400 {
+    border-color: var(--color-blue-400);
+  }
+  .border-emerald-200 {
+    border-color: var(--color-emerald-200);
+  }
+  .border-emerald-300 {
+    border-color: var(--color-emerald-300);
+  }
+  .border-red-400 {
+    border-color: var(--color-red-400);
+  }
+  .border-rose-200 {
+    border-color: var(--color-rose-200);
+  }
+  .border-sky-200 {
+    border-color: var(--color-sky-200);
+  }
+  .border-sky-300 {
+    border-color: var(--color-sky-300);
+  }
+  .border-slate-100 {
+    border-color: var(--color-slate-100);
+  }
+  .border-slate-200 {
+    border-color: var(--color-slate-200);
+  }
+  .border-slate-300 {
+    border-color: var(--color-slate-300);
+  }
+  .border-slate-700 {
+    border-color: var(--color-slate-700);
+  }
+  .border-slate-800 {
+    border-color: var(--color-slate-800);
+  }
+  .border-teal-400 {
+    border-color: var(--color-teal-400);
+  }
+  .border-white\/15 {
+    border-color: color-mix(in srgb, #fff 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+    }
+  }
+  .border-white\/20 {
+    border-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .border-white\/25 {
+    border-color: color-mix(in srgb, #fff 25%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-white) 25%, transparent);
+    }
+  }
+  .border-zinc-500 {
+    border-color: var(--color-zinc-500);
+  }
+  .bg-amber-50\/60 {
+    background-color: color-mix(in srgb, oklch(98.7% 0.022 95.277) 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-amber-50) 60%, transparent);
+    }
+  }
+  .bg-amber-50\/70 {
+    background-color: color-mix(in srgb, oklch(98.7% 0.022 95.277) 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-amber-50) 70%, transparent);
+    }
+  }
+  .bg-amber-100 {
+    background-color: var(--color-amber-100);
+  }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
+  .bg-amber-400\/20 {
+    background-color: color-mix(in srgb, oklch(82.8% 0.189 84.429) 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-amber-400) 20%, transparent);
+    }
+  }
+  .bg-amber-500 {
+    background-color: var(--color-amber-500);
+  }
+  .bg-blue-700 {
+    background-color: var(--color-blue-700);
+  }
+  .bg-emerald-50\/60 {
+    background-color: color-mix(in srgb, oklch(97.9% 0.021 166.113) 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-emerald-50) 60%, transparent);
+    }
+  }
+  .bg-emerald-50\/70 {
+    background-color: color-mix(in srgb, oklch(97.9% 0.021 166.113) 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-emerald-50) 70%, transparent);
+    }
+  }
+  .bg-emerald-100 {
+    background-color: var(--color-emerald-100);
+  }
+  .bg-emerald-500 {
+    background-color: var(--color-emerald-500);
+  }
+  .bg-red-700 {
+    background-color: var(--color-red-700);
+  }
+  .bg-rose-50\/70 {
+    background-color: color-mix(in srgb, oklch(96.9% 0.015 12.422) 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-rose-50) 70%, transparent);
+    }
+  }
+  .bg-sky-50\/60 {
+    background-color: color-mix(in srgb, oklch(97.7% 0.013 236.62) 60%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-sky-50) 60%, transparent);
+    }
+  }
+  .bg-sky-50\/70 {
+    background-color: color-mix(in srgb, oklch(97.7% 0.013 236.62) 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-sky-50) 70%, transparent);
+    }
+  }
+  .bg-slate-50 {
+    background-color: var(--color-slate-50);
+  }
+  .bg-slate-100 {
+    background-color: var(--color-slate-100);
+  }
+  .bg-slate-200\/70 {
+    background-color: color-mix(in srgb, oklch(92.9% 0.013 255.508) 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-slate-200) 70%, transparent);
+    }
+  }
+  .bg-slate-800 {
+    background-color: var(--color-slate-800);
+  }
+  .bg-slate-900 {
+    background-color: var(--color-slate-900);
+  }
+  .bg-teal-700 {
+    background-color: var(--color-teal-700);
+  }
+  .bg-transparent {
+    background-color: transparent;
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
+  .bg-white\/15 {
+    background-color: color-mix(in srgb, #fff 15%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+    }
+  }
+  .bg-white\/20 {
+    background-color: color-mix(in srgb, #fff 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
+    }
+  }
+  .bg-zinc-900 {
+    background-color: var(--color-zinc-900);
+  }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .from-amber-50 {
+    --tw-gradient-from: var(--color-amber-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .via-white {
+    --tw-gradient-via: var(--color-white);
+    --tw-gradient-via-stops: var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-via) var(--tw-gradient-via-position), var(--tw-gradient-to) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-via-stops);
+  }
+  .to-amber-50\/70 {
+    --tw-gradient-to: color-mix(in srgb, oklch(98.7% 0.022 95.277) 70%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      --tw-gradient-to: color-mix(in oklab, var(--color-amber-50) 70%, transparent);
+    }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .p-2\.5 {
+    padding: calc(var(--spacing) * 2.5);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
+  .p-3\.5 {
+    padding: calc(var(--spacing) * 3.5);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
+  }
+  .p-5 {
+    padding: calc(var(--spacing) * 5);
+  }
+  .px-1 {
+    padding-inline: var(--spacing);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
+  }
+  .px-2\.5 {
+    padding-inline: calc(var(--spacing) * 2.5);
+  }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-3\.5 {
+    padding-inline: calc(var(--spacing) * 3.5);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .py-0\.5 {
+    padding-block: calc(var(--spacing) * 0.5);
+  }
+  .py-1 {
+    padding-block: var(--spacing);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+  .py-2\.5 {
+    padding-block: calc(var(--spacing) * 2.5);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+  .py-6 {
+    padding-block: calc(var(--spacing) * 6);
+  }
+  .pt-1 {
+    padding-top: var(--spacing);
+  }
+  .pt-2\.5 {
+    padding-top: calc(var(--spacing) * 2.5);
+  }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
+  .pr-2 {
+    padding-right: calc(var(--spacing) * 2);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  .pb-20 {
+    padding-bottom: calc(var(--spacing) * 20);
+  }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
+  .text-left {
+    text-align: left;
+  }
+  .text-right {
+    text-align: right;
+  }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  .text-sm {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[11px\] {
+    font-size: 11px;
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+  }
+  .leading-snug {
+    --tw-leading: var(--leading-snug);
+    line-height: var(--leading-snug);
+  }
+  .leading-tight {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
+  }
+  .font-medium {
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .tracking-tight {
+    --tw-tracking: var(--tracking-tight);
+    letter-spacing: var(--tracking-tight);
+  }
+  .tracking-wider {
+    --tw-tracking: var(--tracking-wider);
+    letter-spacing: var(--tracking-wider);
+  }
+  .text-amber-300 {
+    color: var(--color-amber-300);
+  }
+  .text-amber-800 {
+    color: var(--color-amber-800);
+  }
+  .text-amber-900 {
+    color: var(--color-amber-900);
+  }
+  .text-emerald-700 {
+    color: var(--color-emerald-700);
+  }
+  .text-emerald-800 {
+    color: var(--color-emerald-800);
+  }
+  .text-emerald-900 {
+    color: var(--color-emerald-900);
+  }
+  .text-rose-700 {
+    color: var(--color-rose-700);
+  }
+  .text-rose-800 {
+    color: var(--color-rose-800);
+  }
+  .text-sky-800 {
+    color: var(--color-sky-800);
+  }
+  .text-sky-900 {
+    color: var(--color-sky-900);
+  }
+  .text-slate-200 {
+    color: var(--color-slate-200);
+  }
+  .text-slate-300 {
+    color: var(--color-slate-300);
+  }
+  .text-slate-400 {
+    color: var(--color-slate-400);
+  }
+  .text-slate-500 {
+    color: var(--color-slate-500);
+  }
+  .text-slate-600 {
+    color: var(--color-slate-600);
+  }
+  .text-slate-700 {
+    color: var(--color-slate-700);
+  }
+  .text-slate-800 {
+    color: var(--color-slate-800);
+  }
+  .text-slate-900 {
+    color: var(--color-slate-900);
+  }
+  .text-slate-950 {
+    color: var(--color-slate-950);
+  }
+  .text-white {
+    color: var(--color-white);
+  }
+  .text-white\/85 {
+    color: color-mix(in srgb, #fff 85%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 85%, transparent);
+    }
+  }
+  .text-white\/90 {
+    color: color-mix(in srgb, #fff 90%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 90%, transparent);
+    }
+  }
+  .normal-case {
+    text-transform: none;
+  }
+  .uppercase {
+    text-transform: uppercase;
+  }
+  .italic {
+    font-style: italic;
+  }
+  .tabular-nums {
+    --tw-numeric-spacing: tabular-nums;
+    font-variant-numeric: var(--tw-ordinal,) var(--tw-slashed-zero,) var(--tw-numeric-figure,) var(--tw-numeric-spacing,) var(--tw-numeric-fraction,);
+  }
+  .opacity-0 {
+    opacity: 0%;
+  }
+  .shadow-2xl {
+    --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-\[0_-4px_12px_rgba\(0\,0\,0\,0\.06\)\] {
+    --tw-shadow: 0 -4px 12px var(--tw-shadow-color, rgba(0,0,0,0.06));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-lg {
+    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-md {
+    --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .shadow-sm {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring-4 {
+    --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+  .ring-white {
+    --tw-ring-color: var(--color-white);
+  }
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  @media (hover: hover) {
+    .hover\:bg-amber-300:hover {
+      background-color: var(--color-amber-300);
+    }
+    .hover\:bg-emerald-400:hover {
+      background-color: var(--color-emerald-400);
+    }
+    .hover\:bg-slate-100:hover {
+      background-color: var(--color-slate-100);
+    }
+    .hover\:bg-slate-200:hover {
+      background-color: var(--color-slate-200);
+    }
+    .hover\:bg-white\/15:hover {
+      background-color: color-mix(in srgb, #fff 15%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/15:hover {
+        background-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+      }
+    }
+    .hover\:bg-white\/25:hover {
+      background-color: color-mix(in srgb, #fff 25%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/25:hover {
+        background-color: color-mix(in oklab, var(--color-white) 25%, transparent);
+      }
+    }
+  }
+  .focus\:outline-none:focus {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+  .disabled\:cursor-not-allowed:disabled {
+    cursor: not-allowed;
+  }
+  .disabled\:opacity-40:disabled {
+    opacity: 40%;
+  }
+  @media (width >= 40rem) {
+    .sm\:left-auto {
+      left: auto;
+    }
+    .sm\:col-span-2 {
+      grid-column: span 2 / span 2;
+    }
+    .sm\:mb-6 {
+      margin-bottom: calc(var(--spacing) * 6);
+    }
+    .sm\:block {
+      display: block;
+    }
+    .sm\:hidden {
+      display: none;
+    }
+    .sm\:inline {
+      display: inline;
+    }
+    .sm\:max-w-none {
+      max-width: none;
+    }
+    .sm\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .sm\:flex-row {
+      flex-direction: row;
+    }
+    .sm\:items-center {
+      align-items: center;
+    }
+    .sm\:gap-6 {
+      gap: calc(var(--spacing) * 6);
+    }
+    :where(.sm\:space-y-6 > :not(:last-child)) {
+      --tw-space-y-reverse: 0;
+      margin-block-start: calc(calc(var(--spacing) * 6) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-y-reverse)));
+    }
+    .sm\:p-4 {
+      padding: calc(var(--spacing) * 4);
+    }
+    .sm\:p-5 {
+      padding: calc(var(--spacing) * 5);
+    }
+    .sm\:p-6 {
+      padding: calc(var(--spacing) * 6);
+    }
+    .sm\:px-3\.5 {
+      padding-inline: calc(var(--spacing) * 3.5);
+    }
+    .sm\:px-6 {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+    .sm\:py-6 {
+      padding-block: calc(var(--spacing) * 6);
+    }
+    .sm\:text-2xl {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+    .sm\:text-base {
+      font-size: var(--text-base);
+      line-height: var(--tw-leading, var(--text-base--line-height));
+    }
+    .sm\:text-lg {
+      font-size: var(--text-lg);
+      line-height: var(--tw-leading, var(--text-lg--line-height));
+    }
+    .sm\:text-sm {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+    .sm\:text-xl {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+    .sm\:text-xs {
+      font-size: var(--text-xs);
+      line-height: var(--tw-leading, var(--text-xs--line-height));
+    }
+  }
+  @media (width >= 48rem) {
+    .md\:col-span-2 {
+      grid-column: span 2 / span 2;
+    }
+    .md\:flex {
+      display: flex;
+    }
+    .md\:hidden {
+      display: none;
+    }
+    .md\:grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .md\:flex-row {
+      flex-direction: row;
+    }
+    .md\:items-center {
+      align-items: center;
+    }
+    .md\:pb-6 {
+      padding-bottom: calc(var(--spacing) * 6);
+    }
+  }
+  @media (width >= 64rem) {
+    .lg\:col-span-5 {
+      grid-column: span 5 / span 5;
+    }
+    .lg\:col-span-7 {
+      grid-column: span 7 / span 7;
+    }
+    .lg\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+}
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  input::placeholder, textarea::placeholder {
+    color: var(--color-gray-400);
+  }
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-space-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-divide-y-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ordinal {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-slashed-zero {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-figure {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-spacing {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-numeric-fraction {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-inset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
+@property --tw-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-inset-ring-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-inset-ring-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-ring-inset {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-ring-offset-width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --tw-ring-offset-color {
+  syntax: "*";
+  inherits: false;
+  initial-value: #fff;
+}
+@property --tw-ring-offset-shadow {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0 0 #0000;
+}
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
+      --tw-space-y-reverse: 0;
+      --tw-divide-y-reverse: 0;
+      --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
+      --tw-ordinal: initial;
+      --tw-slashed-zero: initial;
+      --tw-numeric-figure: initial;
+      --tw-numeric-spacing: initial;
+      --tw-numeric-fraction: initial;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-color: initial;
+      --tw-shadow-alpha: 100%;
+      --tw-inset-shadow: 0 0 #0000;
+      --tw-inset-shadow-color: initial;
+      --tw-inset-shadow-alpha: 100%;
+      --tw-ring-color: initial;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-inset-ring-color: initial;
+      --tw-inset-ring-shadow: 0 0 #0000;
+      --tw-ring-inset: initial;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-duration: initial;
+    }
+  }
+}
+
+
+
+        :root {
+            --brand-primary: #0f766e;
+            --brand-light: #f0fdfa;
+            --brand-border: #99f6e4;
+        }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .bg-brand { background-color: var(--brand-primary); }
+        .bg-brand-light { background-color: var(--brand-light); }
+        .text-brand { color: var(--brand-primary); }
+        .border-brand { border-color: var(--brand-primary); }
+        .border-brand-light { border-color: var(--brand-border); }
+        input[type="range"] { -webkit-appearance: none; appearance: none; width: 100%; height: 8px; background: #cbd5e1; border-radius: 999px; outline: none; }
+        input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 24px; height: 24px; border-radius: 50%; background: var(--brand-primary); border: 3px solid #fff; box-shadow: 0 2px 6px rgba(0,0,0,.28); cursor: pointer; }
+        input[type="range"]::-moz-range-thumb { width: 22px; height: 22px; border-radius: 50%; background: var(--brand-primary); border: 3px solid #fff; cursor: pointer; }
+        .num { font-variant-numeric: tabular-nums; }
+        @media print {
+            .no-print { display: none !important; }
+            body { background: #fff; padding-bottom: 0 !important; }
+            .tab-panel.hidden { display: none !important; }
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-20 md:pb-6">
+
+    <!-- TOAST -->
+    <div id="toast" class="fixed top-4 left-4 right-4 sm:left-auto z-50 hidden transition-all duration-300 opacity-0 -translate-y-2">
+        <div class="bg-slate-900 text-white px-4 py-3 rounded-xl shadow-2xl max-w-md ml-auto text-xs sm:text-sm font-medium" id="toast-message"></div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="bg-brand text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-3.5 sm:px-6 py-3">
+            <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-3 min-w-0">
+                    <div class="w-10 h-10 rounded-xl bg-white/15 border border-white/25 flex items-center justify-center shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 17a2 2 0 100-4 2 2 0 000 4zm8 0a2 2 0 100-4 2 2 0 000 4zM5 15H3v-4l2-5h11l4 5v4h-2m-2 0H9"/></svg>
+                    </div>
+                    <div class="min-w-0">
+                        <div class="flex items-center flex-wrap gap-1.5">
+                            <h1 class="text-base sm:text-xl font-extrabold tracking-tight">Qualif'Flotte Pro 2026</h1>
+                            <span id="header-dealer-badge" class="text-[10px] sm:text-xs uppercase tracking-wider px-2 py-0.5 rounded-full bg-white/20 font-bold truncate max-w-[180px] sm:max-w-none">Concession partenaire</span>
+                        </div>
+                        <p class="text-[11px] sm:text-xs text-white/85 truncate">Comptant, crédit, LOA ou LLD : comparer les offres de la concession pour un client professionnel</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-1.5 shrink-0 no-print">
+                    <button type="button" onclick="switchTab('pitch')" class="px-2.5 sm:px-3.5 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold">
+                        <span class="hidden sm:inline">Personnaliser</span><span class="sm:hidden">Réglages</span>
+                    </button>
+                    <button type="button" onclick="window.print()" class="hidden sm:block px-3 py-2 rounded-xl bg-white/15 hover:bg-white/25 text-xs font-bold border border-white/20">PDF</button>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center gap-2 mt-3 pt-2.5 border-t border-white/15 no-print">
+                <button type="button" onclick="switchTab('sim')" id="desk-tab-sim" class="desk-tab px-4 py-2 rounded-xl text-xs font-extrabold uppercase tracking-wider">1. Comparateur &amp; fiche contact</button>
+                <button type="button" onclick="switchTab('news')" id="desk-tab-news" class="desk-tab px-4 py-2 rounded-xl text-xs font-extrabold uppercase tracking-wider">2. Fiscalité &amp; repères 2026</button>
+                <button type="button" onclick="switchTab('pitch')" id="desk-tab-pitch" class="desk-tab px-4 py-2 rounded-xl text-xs font-extrabold uppercase tracking-wider">3. Réglages</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-3.5 sm:px-6 py-4 sm:py-6">
+
+        <!-- STUDENT BANNER -->
+        <div class="mb-3 bg-gradient-to-r from-amber-50 via-white to-amber-50/70 border border-amber-300 rounded-2xl p-3.5 sm:p-4 flex items-start sm:items-center gap-3 shadow-sm">
+            <span class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center text-lg shrink-0">🎓</span>
+            <div class="min-w-0">
+                <p class="text-sm sm:text-base font-extrabold text-slate-900 leading-tight" id="student-banner-badge">Présenté par un élève de Bac Pro MCV</p>
+                <p class="text-xs font-bold text-slate-700 mt-0.5" id="student-banner-title">Outil configuré pour votre concession</p>
+                <p class="text-[11px] text-slate-500 mt-1 leading-snug">Outil conçu par M. Nguon, professeur d'éco-gestion au Lycée Georges Brassens (Villepinte), avec ses élèves. Ancien directeur d'agence bancaire et courtier, il en vérifie le contenu.</p>
+            </div>
+        </div>
+
+        <!-- PERMANENT NOTICE -->
+        <div class="mb-4 sm:mb-6 px-3.5 py-2 rounded-xl bg-slate-200/70 border border-slate-300 text-[11px] text-slate-700 leading-snug">
+            <strong>Simulation pédagogique indicative.</strong> Les prix et loyers sont saisis à partir des offres de la concession : seule la concession et son organisme financier peuvent établir une offre et accepter un financement. Les informations fiscales sont générales et doivent être confirmées par l'expert-comptable du client.
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- TAB 1 : COMPARATEUR                                              -->
+        <!-- =============================================================== -->
+        <div id="tab-content-sim" class="tab-panel space-y-5 sm:space-y-6">
+
+            <!-- PRESETS -->
+            <div class="bg-white rounded-2xl p-3.5 sm:p-4 border border-slate-200 shadow-sm no-print">
+                <p class="text-xs font-extrabold uppercase tracking-wider text-slate-700 mb-2">Exemples rapides <span class="normal-case font-semibold text-slate-500">(à remplacer par les offres réelles de la concession)</span></p>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-2">
+                    <button type="button" data-preset="artisan" class="preset-btn px-3 py-2 rounded-xl border text-left">
+                        <span class="block text-xs font-extrabold">🚐 Utilitaire artisan</span>
+                        <span class="block text-[10px] text-slate-500 font-semibold">1 utilitaire • 28 000 € HT</span>
+                    </button>
+                    <button type="button" data-preset="flotte" class="preset-btn px-3 py-2 rounded-xl border text-left">
+                        <span class="block text-xs font-extrabold">🏢 3 utilitaires TPE</span>
+                        <span class="block text-[10px] text-slate-500 font-semibold">3 × 28 000 € HT</span>
+                    </button>
+                    <button type="button" data-preset="citadine" class="preset-btn px-3 py-2 rounded-xl border text-left">
+                        <span class="block text-xs font-extrabold">🚗 Citadine électrique</span>
+                        <span class="block text-[10px] text-slate-500 font-semibold">Voiture • 22 000 € HT</span>
+                    </button>
+                    <button type="button" data-preset="suv" class="preset-btn px-3 py-2 rounded-xl border text-left">
+                        <span class="block text-xs font-extrabold">⚡ SUV électrique dirigeant</span>
+                        <span class="block text-[10px] text-slate-500 font-semibold">Voiture • 42 000 € HT</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-6 items-start">
+
+                <!-- LEFT: INPUTS -->
+                <div class="lg:col-span-5 space-y-5">
+
+                    <!-- 1. Le projet -->
+                    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-5 space-y-4">
+                        <h2 class="text-sm sm:text-base font-extrabold text-slate-800 pb-2 border-b border-slate-100">1. Le projet du client</h2>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1.5">Type de véhicule</label>
+                            <div class="grid grid-cols-2 gap-2">
+                                <button type="button" id="btn-cat-vul" onclick="setCategory('VUL')" class="cat-btn p-2.5 rounded-xl border-2 text-left">
+                                    <span class="block text-xs font-extrabold">🚐 Utilitaire (N1)</span>
+                                    <span class="block text-[10px] text-slate-500">TVA récupérable si usage pro</span>
+                                </button>
+                                <button type="button" id="btn-cat-vp" onclick="setCategory('VP')" class="cat-btn p-2.5 rounded-xl border-2 text-left">
+                                    <span class="block text-xs font-extrabold">⚡ Voiture 100 % électrique</span>
+                                    <span class="block text-[10px] text-slate-500">Véhicule de tourisme : TVA non récupérable</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1.5" for="input-legal">Forme de l'entreprise cliente</label>
+                            <select id="input-legal" onchange="calculateAll()" class="w-full px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-200 text-sm font-semibold">
+                                <option value="EI">Entreprise individuelle / micro-entreprise</option>
+                                <option value="SOC">Société (SARL, EURL, SAS, SASU…)</option>
+                            </select>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" for="input-qty">Nombre de véhicules</label>
+                                <input type="number" id="input-qty" min="1" max="20" value="1" oninput="calculateAll()" class="w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-sm font-extrabold num">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" for="input-price">Prix HT remisé / véh.</label>
+                                <div class="flex items-center bg-slate-50 rounded-xl px-3 py-2 border border-slate-200">
+                                    <input type="number" id="input-price" min="5000" max="150000" step="500" value="28000" oninput="calculateAll()" class="w-full bg-transparent text-sm font-extrabold num focus:outline-none">
+                                    <span class="text-xs font-bold text-slate-400">€</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1.5">Durée</label>
+                            <div class="grid grid-cols-4 gap-1.5">
+                                <button type="button" data-dur="24" class="dur-btn min-h-[42px] rounded-xl text-xs border">24 mois</button>
+                                <button type="button" data-dur="36" class="dur-btn min-h-[42px] rounded-xl text-xs border">36 mois</button>
+                                <button type="button" data-dur="48" class="dur-btn min-h-[42px] rounded-xl text-xs border">48 mois</button>
+                                <button type="button" data-dur="60" class="dur-btn min-h-[42px] rounded-xl text-xs border">60 mois</button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-1.5">
+                                <label class="text-xs font-bold text-slate-700" for="input-km">Kilométrage annuel</label>
+                                <span class="text-xs font-extrabold text-brand num" id="lbl-km">25 000 km</span>
+                            </div>
+                            <input type="range" id="input-km" min="10000" max="60000" step="5000" value="25000" oninput="calculateAll()">
+                        </div>
+                    </section>
+
+                    <!-- 2. Les offres de la concession -->
+                    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-5 space-y-4">
+                        <div class="pb-2 border-b border-slate-100">
+                            <h2 class="text-sm sm:text-base font-extrabold text-slate-800">2. Les offres de la concession <span class="text-xs font-semibold text-slate-500">(HT, par véhicule)</span></h2>
+                            <p class="text-[11px] text-slate-500 mt-0.5" id="financer-hint">Recopiez les offres remises par le vendeur. Les valeurs affichées sont des exemples.</p>
+                        </div>
+
+                        <div class="p-3 rounded-xl bg-emerald-50/60 border border-emerald-200 space-y-2">
+                            <p class="text-xs font-extrabold text-emerald-900">Location longue durée (LLD)</p>
+                            <div class="grid grid-cols-2 gap-2">
+                                <label class="text-[11px] font-semibold text-slate-600">1er loyer majoré
+                                    <input type="number" id="lld-first" min="0" step="100" value="0" oninput="calculateAll()" class="mt-1 w-full px-2.5 py-2 rounded-lg bg-white border border-slate-200 text-sm font-extrabold num">
+                                </label>
+                                <label class="text-[11px] font-semibold text-slate-600">Loyer mensuel
+                                    <input type="number" id="lld-rent" min="0" step="5" value="460" oninput="calculateAll()" class="mt-1 w-full px-2.5 py-2 rounded-lg bg-white border border-slate-200 text-sm font-extrabold num">
+                                </label>
+                            </div>
+                            <label class="flex items-start gap-2 cursor-pointer">
+                                <input type="checkbox" id="lld-maint" checked onchange="calculateAll()" class="mt-0.5 w-4 h-4 shrink-0">
+                                <span class="text-[11px] text-slate-700">Entretien et pneumatiques inclus dans le loyer</span>
+                            </label>
+                        </div>
+
+                        <div class="p-3 rounded-xl bg-sky-50/60 border border-sky-200 space-y-2">
+                            <p class="text-xs font-extrabold text-sky-900">Location avec option d'achat (LOA)</p>
+                            <div class="grid grid-cols-3 gap-2">
+                                <label class="text-[11px] font-semibold text-slate-600">1er loyer majoré
+                                    <input type="number" id="loa-first" min="0" step="100" value="2800" oninput="calculateAll()" class="mt-1 w-full px-2 py-2 rounded-lg bg-white border border-slate-200 text-sm font-extrabold num">
+                                </label>
+                                <label class="text-[11px] font-semibold text-slate-600">Loyer mensuel
+                                    <input type="number" id="loa-rent" min="0" step="5" value="380" oninput="calculateAll()" class="mt-1 w-full px-2 py-2 rounded-lg bg-white border border-slate-200 text-sm font-extrabold num">
+                                </label>
+                                <label class="text-[11px] font-semibold text-slate-600">Option d'achat
+                                    <input type="number" id="loa-option" min="0" step="100" value="9200" oninput="calculateAll()" class="mt-1 w-full px-2 py-2 rounded-lg bg-white border border-slate-200 text-sm font-extrabold num">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                            <p class="text-xs font-extrabold text-slate-800">Crédit classique</p>
+                            <p class="text-[10px] text-slate-500">Exemple : 6,4 % = taux moyen observé des prêts de plus de 6 000 € (Banque de France, 3e trimestre 2026). Remplacez-le par le taux proposé au client.</p>
+                            <div class="grid grid-cols-2 gap-2">
+                                <label class="text-[11px] font-semibold text-slate-600">Taux annuel (%)
+                                    <input type="number" id="credit-rate" min="0" max="20" step="0.1" value="6.4" oninput="calculateAll()" class="mt-1 w-full px-2.5 py-2 rounded-lg bg-white border border-slate-200 text-sm font-extrabold num">
+                                </label>
+                                <label class="text-[11px] font-semibold text-slate-600">Apport (€)
+                                    <input type="number" id="credit-apport" min="0" step="500" value="0" oninput="calculateAll()" class="mt-1 w-full px-2.5 py-2 rounded-lg bg-white border border-slate-200 text-sm font-extrabold num">
+                                </label>
+                            </div>
+                        </div>
+
+                        <details class="p-3 rounded-xl bg-amber-50/60 border border-amber-200">
+                            <summary class="text-xs font-extrabold text-amber-900 cursor-pointer">Hypothèses (à faire valider par l'atelier et le service VO)</summary>
+                            <div class="grid grid-cols-2 gap-2 mt-2">
+                                <label class="text-[11px] font-semibold text-slate-600">Entretien + pneus (€ HT/mois)
+                                    <input type="number" id="maint-month" min="0" step="5" value="65" oninput="calculateAll()" class="mt-1 w-full px-2.5 py-2 rounded-lg bg-white border border-slate-200 text-sm font-extrabold num">
+                                </label>
+                                <label class="text-[11px] font-semibold text-slate-600">Valeur de revente en fin de période (%)
+                                    <input type="number" id="resale-pct" min="0" max="90" step="1" value="40" oninput="onResaleEdited()" class="mt-1 w-full px-2.5 py-2 rounded-lg bg-white border border-slate-200 text-sm font-extrabold num">
+                                </label>
+                            </div>
+                            <p class="text-[10px] text-slate-500 mt-1.5">La valeur de revente se recalcule selon la durée et le kilométrage tant que vous ne la modifiez pas à la main.</p>
+                        </details>
+                    </section>
+                </div>
+
+                <!-- RIGHT: RESULTS -->
+                <div class="lg:col-span-7 space-y-5">
+
+                    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-5">
+                        <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-100 mb-3">
+                            <h2 class="text-sm sm:text-base font-extrabold text-slate-800">3. Comparaison sur la durée</h2>
+                            <span class="text-[11px] font-bold px-2.5 py-1 rounded-lg bg-slate-100 text-slate-700" id="compare-basis"></span>
+                        </div>
+                        <div id="compare-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+                        <p class="text-[11px] text-slate-500 mt-3 leading-snug" id="compare-note"></p>
+                    </section>
+
+                    <section class="bg-white rounded-2xl shadow-sm border border-slate-200 p-4 sm:p-5 space-y-3">
+                        <h2 class="text-sm sm:text-base font-extrabold text-slate-800 pb-2 border-b border-slate-100">4. Points fiscaux pour ce client</h2>
+                        <ul id="fiscal-list" class="space-y-2 text-xs text-slate-700 leading-relaxed"></ul>
+                        <p class="text-[10px] text-slate-500">Règles 2026, résumées. À confirmer par l'expert-comptable du client.</p>
+                    </section>
+
+                    <!-- FICHE CONTACT -->
+                    <section class="bg-white rounded-2xl shadow-sm border-2 border-brand p-4 sm:p-5 space-y-3 no-print">
+                        <div class="pb-2 border-b border-slate-100">
+                            <h2 class="text-sm sm:text-base font-extrabold text-slate-800">5. Fiche contact pour le vendeur de la concession</h2>
+                            <p class="text-[11px] text-slate-500 mt-0.5" id="lead-dest">Destinataire : vendeur à renseigner dans l'onglet Personnaliser.</p>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs">
+                            <label class="font-semibold text-slate-600">Entreprise *
+                                <input type="text" id="lead-company" oninput="updateLeadState()" placeholder="Ex : Bâtiment Services 93" class="mt-1 w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-sm">
+                            </label>
+                            <label class="font-semibold text-slate-600">SIREN (facultatif)
+                                <input type="text" id="lead-siren" maxlength="11" placeholder="9 chiffres" class="mt-1 w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-sm">
+                            </label>
+                            <label class="font-semibold text-slate-600">Nom du contact *
+                                <input type="text" id="lead-name" oninput="updateLeadState()" class="mt-1 w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-sm">
+                            </label>
+                            <label class="font-semibold text-slate-600">Téléphone ou e-mail *
+                                <input type="text" id="lead-contact" oninput="updateLeadState()" class="mt-1 w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-sm">
+                            </label>
+                            <label class="font-semibold text-slate-600 sm:col-span-2">Besoin / échéance
+                                <input type="text" id="lead-need" placeholder="Ex : remplacer 2 utilitaires d'ici mars" class="mt-1 w-full px-3 py-2 rounded-xl bg-slate-50 border border-slate-200 text-sm">
+                            </label>
+                        </div>
+                        <label class="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-200 cursor-pointer">
+                            <input type="checkbox" id="lead-consent" onchange="updateLeadState()" class="mt-0.5 w-4 h-4 shrink-0">
+                            <span class="text-[11px] text-slate-700 leading-snug" id="lead-consent-text">Le client accepte que ses coordonnées soient transmises à la concession pour être recontacté au sujet de ce projet. Elles ne sont pas enregistrées par cet outil ni transmises à quelqu'un d'autre.</span>
+                        </label>
+                        <div class="flex flex-col sm:flex-row gap-2">
+                            <button type="button" id="btn-mail-lead" onclick="mailLead()" disabled class="flex-1 py-3 px-4 rounded-xl bg-brand text-white text-xs sm:text-sm font-extrabold disabled:opacity-40 disabled:cursor-not-allowed">Envoyer au vendeur</button>
+                            <button type="button" id="btn-copy-lead" onclick="copyLead()" disabled class="flex-1 py-3 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs sm:text-sm font-extrabold disabled:opacity-40 disabled:cursor-not-allowed">Copier la fiche</button>
+                        </div>
+                        <p class="text-[10px] text-slate-500" id="lead-hint">Remplissez les champs * et cochez l'accord du client pour activer les boutons.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- TAB 2 : FISCALITÉ & REPÈRES 2026                                 -->
+        <!-- =============================================================== -->
+        <div id="tab-content-news" class="tab-panel hidden space-y-5">
+
+            <div class="bg-slate-900 text-white rounded-2xl p-5 sm:p-6 shadow-lg">
+                <span class="inline-block px-3 py-1 rounded-full bg-amber-400/20 border border-amber-400/40 text-amber-300 text-xs font-extrabold uppercase tracking-wider">Repères vérifiés • novembre 2026</span>
+                <h2 class="text-xl sm:text-2xl font-black mt-2">Financer un véhicule professionnel : ce qu'il faut savoir en 2026</h2>
+                <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">Les quatre façons de financer, la fiscalité des utilitaires et des voitures électriques, et ce qui change au 1er janvier 2027. Contenu vérifié par M. Nguon.</p>
+            </div>
+
+            <!-- VEILLE DU MOIS -->
+            <div class="bg-white rounded-2xl p-5 border-2 border-brand shadow-sm space-y-3">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                    <h3 class="text-base font-extrabold text-slate-900">📰 Veille du mois — novembre 2026</h3>
+                    <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-slate-100 text-slate-600">Chiffres d'octobre 2026, provisoires</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div class="p-3.5 rounded-xl bg-emerald-50/70 border border-emerald-200">
+                        <p class="text-[11px] font-extrabold uppercase tracking-wider text-emerald-800">Voitures neuves</p>
+                        <p class="text-2xl font-black text-slate-900 num">149 340 <span class="text-sm font-bold text-emerald-700">+7 %</span></p>
+                        <p class="text-xs text-slate-700 leading-relaxed"><strong>41 % d'électriques</strong> en octobre, contre 24 % un an plus tôt, et <strong>46 % dans les flottes d'entreprise</strong>. Les hybrides restent en tête (44 %).</p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-rose-50/70 border border-rose-200">
+                        <p class="text-[11px] font-extrabold uppercase tracking-wider text-rose-800">Utilitaires neufs</p>
+                        <p class="text-2xl font-black text-slate-900 num">≈ 27 800 <span class="text-sm font-bold text-rose-700">−13 %</span></p>
+                        <p class="text-xs text-slate-700 leading-relaxed">Septième mois de baisse d'affilée ; −6,2 % depuis janvier. Les concessions ont besoin d'aller chercher les artisans et les TPE.</p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-sky-50/70 border border-sky-200">
+                        <p class="text-[11px] font-extrabold uppercase tracking-wider text-sky-800">Aide à l'électrique : la prime CEE</p>
+                        <p class="text-xs text-slate-700 leading-relaxed mt-1">Le bonus écologique n'existe plus pour les entreprises. La prime CEE le remplace, à l'achat comme en LLD : <strong>plusieurs milliers d'euros pour un utilitaire électrique neuf</strong> (davantage s'il est assemblé en Europe), quelques centaines pour une voiture. <strong>Elle doit être proposée avant la signature</strong> du bon de commande ou du contrat, et le véhicule gardé au moins 24 mois.</p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-amber-50/70 border border-amber-200">
+                        <p class="text-[11px] font-extrabold uppercase tracking-wider text-amber-800">Taux : nouveauté au 20 novembre</p>
+                        <p class="text-xs text-slate-700 leading-relaxed mt-1">Pour les particuliers, la <strong>LOA a désormais son propre taux d'usure : 10,99 %</strong> (taux moyen observé : 8,24 %). Pour un prêt de plus de 6 000 €, le plafond est de 8,56 % (taux moyen observé : 6,42 %). Source : Banque de France.</p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-slate-50 border border-slate-200 md:col-span-2">
+                        <p class="text-[11px] font-extrabold uppercase tracking-wider text-slate-700">Budget 2027 : à suivre</p>
+                        <p class="text-xs text-slate-700 leading-relaxed mt-1">Le projet de loi de finances 2027 (déposé le 1er octobre) garde les voitures électriques <strong>hors malus</strong> et ne touche pas à l'abattement de 70 % sur l'avantage en nature, valable jusqu'au 31/12/2027. Il prévoit en revanche de retirer un avantage au malus au poids à certains <strong>micro-hybrides</strong>. Le texte peut encore être modifié par le Parlement.</p>
+                    </div>
+                </div>
+                <div class="p-3 rounded-xl bg-brand-light border border-brand-light">
+                    <p class="text-[11px] font-extrabold uppercase tracking-wider text-brand">Argument pour le vendeur</p>
+                    <p class="text-xs text-slate-800 italic mt-0.5">« Un utilitaire électrique peut ouvrir droit à plusieurs milliers d'euros de prime CEE, y compris en LLD. Faisons-la chiffrer avant de signer, sinon elle est perdue. »</p>
+                </div>
+            </div>
+
+            <!-- Les 4 solutions -->
+            <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
+                <h3 class="text-base font-extrabold text-slate-900 mb-3">Les 4 façons de financer un véhicule</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full min-w-[620px] text-left text-xs border-collapse">
+                        <thead>
+                            <tr class="border-b border-slate-200 text-[10px] uppercase font-extrabold text-slate-500">
+                                <th class="py-2 pr-2"></th><th class="py-2 px-2">Comptant</th><th class="py-2 px-2">Crédit</th><th class="py-2 px-2">LOA</th><th class="py-2 pl-2">LLD</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            <tr><td class="py-2 pr-2 font-bold">Propriétaire</td><td class="py-2 px-2">Le client</td><td class="py-2 px-2">Le client</td><td class="py-2 px-2">L'organisme financier, puis le client s'il lève l'option</td><td class="py-2 pl-2">Le loueur</td></tr>
+                            <tr><td class="py-2 pr-2 font-bold">Trésorerie au départ</td><td class="py-2 px-2">Tout le prix</td><td class="py-2 px-2">L'apport</td><td class="py-2 px-2">Le 1er loyer majoré</td><td class="py-2 pl-2">Le 1er loyer majoré (souvent faible ou nul)</td></tr>
+                            <tr><td class="py-2 pr-2 font-bold">Fin de contrat</td><td class="py-2 px-2">Le client revend</td><td class="py-2 px-2">Le client revend</td><td class="py-2 px-2">Il rachète ou rend le véhicule</td><td class="py-2 pl-2">Il rend le véhicule</td></tr>
+                            <tr><td class="py-2 pr-2 font-bold">Risque de revente</td><td class="py-2 px-2">Client</td><td class="py-2 px-2">Client</td><td class="py-2 px-2">Organisme financier (sauf si option levée)</td><td class="py-2 pl-2">Loueur</td></tr>
+                            <tr><td class="py-2 pr-2 font-bold">Attention à</td><td class="py-2 px-2">Trésorerie immobilisée</td><td class="py-2 px-2">Endettement, entretien à part</td><td class="py-2 px-2">Kilométrage et état au retour</td><td class="py-2 pl-2">Kilométrage et frais de remise en état</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-2">
+                    <h3 class="text-sm font-extrabold text-slate-900">🚐 Utilitaire (catégorie N1)</h3>
+                    <ul class="text-xs text-slate-700 space-y-1.5 leading-relaxed">
+                        <li>• <strong>TVA récupérable</strong> sur le prix, les loyers et l'entretien quand le véhicule sert à l'activité.</li>
+                        <li>• <strong>Pas de plafond d'amortissement</strong> : tout le prix est amortissable.</li>
+                        <li>• Pas concerné par les taxes annuelles des voitures de tourisme.</li>
+                        <li>• <strong>Attention</strong> : certains pick-up double cabine ou utilitaires à deux rangs de places peuvent être traités comme des voitures de tourisme. À vérifier avec l'expert-comptable.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-2">
+                    <h3 class="text-sm font-extrabold text-slate-900">⚡ Voiture 100 % électrique en entreprise</h3>
+                    <ul class="text-xs text-slate-700 space-y-1.5 leading-relaxed">
+                        <li>• <strong>Plafond d'amortissement déductible : 30 000 €</strong> TTC (au-delà, une part n'est pas déductible).</li>
+                        <li>• <strong>TVA non récupérable</strong> sur le prix et les loyers (voiture de tourisme), mais récupérable sur l'électricité de recharge.</li>
+                        <li>• <strong>Aucun malus</strong> en 2026 (ni CO2, ni poids). L'exonération au poids pourrait être rediscutée pour 2027.</li>
+                        <li>• <strong>Taxes annuelles CO2 et polluants : exonérée.</strong> Les entreprises individuelles en sont de toute façon exonérées.</li>
+                        <li>• <strong>Avantage en nature</strong> (véhicule confié à un salarié avec usage privé) : abattement de 70 %, plafonné à 4 641,60 € en 2026, si le modèle a l'éco-score. Valable jusqu'au 31/12/2027.</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm space-y-2">
+                    <h3 class="text-sm font-extrabold text-slate-900">🏙️ Zones à faibles émissions (ZFE)</h3>
+                    <p class="text-xs text-slate-700 leading-relaxed">Le Parlement a voté leur suppression le 15 avril 2026, mais le Conseil constitutionnel l'a annulée le 21 mai 2026. <strong>Les ZFE restent en vigueur</strong> là où elles existent. L'accès dépend de la <strong>vignette Crit'Air</strong>, pas du type de véhicule : un utilitaire diesel ancien est concerné comme une voiture. Un électrique a la vignette « zéro émission ».</p>
+                </div>
+                <div class="bg-white rounded-2xl p-5 border border-amber-300 shadow-sm space-y-2">
+                    <h3 class="text-sm font-extrabold text-slate-900">📅 Au 1er janvier 2027</h3>
+                    <p class="text-xs text-slate-700 leading-relaxed">Le <strong>malus CO2 se durcit</strong> : il se déclenchera dès <strong>103 g de CO2/km</strong> (contre 108 g en 2026) et pourra atteindre <strong>90 000 €</strong>. C'est la date d'immatriculation qui compte : une voiture thermique immatriculée le 31 décembre paie le barème 2026, la même quelques jours plus tard paie celui de 2027. <strong>Argument de calendrier</strong> pour les commandes de fin d'année, à vérifier avec le vendeur selon le modèle et les délais de livraison.</p>
+                </div>
+            </div>
+
+            <p class="text-[11px] text-slate-500 px-1">Sources : AAA Data et Plateforme automobile (immatriculations d'octobre 2026), Banque de France (taux d'usure), arrêté du 18 mai 2026 (prime CEE), Service-public.fr (taxes sur l'affectation des véhicules), URSSAF et arrêté du 25 février 2025 (avantage en nature), loi de finances 2026 (malus), décision du Conseil constitutionnel n° 2026-903 DC du 21 mai 2026 (ZFE), article 39-4 du CGI (amortissement).</p>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- TAB 3 : PERSONNALISER & PITCH                                    -->
+        <!-- =============================================================== -->
+        <div id="tab-content-pitch" class="tab-panel hidden space-y-5 no-print">
+
+            <section class="bg-slate-900 text-white rounded-2xl p-5 sm:p-6 shadow-lg space-y-4">
+                <div>
+                    <span class="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded bg-amber-400 text-slate-950">Réglages</span>
+                    <h3 class="text-base sm:text-lg font-extrabold mt-1">1. Réglages de la concession</h3>
+                    <p class="text-xs text-slate-300">Ces réglages sont mémorisés sur cet appareil.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    <label class="text-xs font-semibold text-slate-300">Nom de la concession
+                        <input type="text" id="cfg-dealer" oninput="saveConfig()" placeholder="Ex : Garage du Parc" class="mt-1 w-full px-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm font-bold">
+                    </label>
+                    <label class="text-xs font-semibold text-slate-300">Marque(s)
+                        <input type="text" id="cfg-brand" oninput="saveConfig()" placeholder="Ex : la marque distribuée" class="mt-1 w-full px-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm font-bold">
+                    </label>
+                    <label class="text-xs font-semibold text-slate-300">Ville
+                        <input type="text" id="cfg-city" oninput="saveConfig()" placeholder="Ex : Villepinte" class="mt-1 w-full px-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm font-bold">
+                    </label>
+                    <label class="text-xs font-semibold text-slate-300">Organisme financier de la concession
+                        <input type="text" id="cfg-financer" oninput="saveConfig()" placeholder="Demandez-le au vendeur" class="mt-1 w-full px-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm font-bold">
+                    </label>
+                    <label class="text-xs font-semibold text-slate-300">Vendeur destinataire des fiches
+                        <input type="text" id="cfg-seller" oninput="saveConfig()" placeholder="Prénom Nom" class="mt-1 w-full px-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm font-bold">
+                    </label>
+                    <label class="text-xs font-semibold text-slate-300">E-mail du vendeur
+                        <input type="email" id="cfg-seller-email" oninput="saveConfig()" placeholder="vendeur@concession.fr" class="mt-1 w-full px-3 py-2.5 rounded-xl bg-slate-800 border border-slate-700 text-white text-sm font-bold">
+                    </label>
+
+                    <div class="sm:col-span-2">
+                        <span class="block text-xs font-semibold text-slate-300 mb-1">Couleur de la marque</span>
+                        <div class="grid grid-cols-5 gap-1.5">
+                            <button type="button" data-theme-btn="teal" onclick="setTheme('teal')" class="py-2.5 rounded-xl bg-teal-700 text-[11px] font-bold border-2 border-teal-400">Vert</button>
+                            <button type="button" data-theme-btn="blue" onclick="setTheme('blue')" class="py-2.5 rounded-xl bg-blue-700 text-[11px] font-bold border-2 border-blue-400">Bleu</button>
+                            <button type="button" data-theme-btn="red" onclick="setTheme('red')" class="py-2.5 rounded-xl bg-red-700 text-[11px] font-bold border-2 border-red-400">Rouge</button>
+                            <button type="button" data-theme-btn="black" onclick="setTheme('black')" class="py-2.5 rounded-xl bg-zinc-900 text-[11px] font-bold border-2 border-zinc-500">Noir</button>
+                            <button type="button" data-theme-btn="yellow" onclick="setTheme('yellow')" class="py-2.5 rounded-xl bg-amber-500 text-slate-950 text-[11px] font-extrabold border-2 border-amber-300">Jaune</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-3 border-t border-slate-800 flex justify-end">
+                    <button type="button" onclick="switchTab('sim')" class="px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-extrabold">← Retour au comparateur</button>
+                </div>
+            </section>
+
+            
+
+            
+
+            <section class="bg-slate-100 rounded-2xl p-4 sm:p-5 border border-slate-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div class="space-y-1">
+                    <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-800">Relation école-entreprise</h4>
+                    <p class="text-xs text-slate-700 leading-relaxed">Outil conçu par M. Nguon, professeur d'éco-gestion au Lycée Georges Brassens de Villepinte (ancien directeur d'agence bancaire et courtier), avec ses élèves de Bac Pro MCV. Outil gratuit, sans rémunération d'aucune sorte.</p>
+                    <p class="text-[11px] text-emerald-700 font-semibold">🔒 Aucune donnée client n'est enregistrée : les fiches contact ne sont envoyées qu'au vendeur de la concession, avec l'accord du client. Seuls les réglages de cet onglet sont mémorisés sur ce téléphone.</p>
+                </div>
+                <a href="#" data-contact class="hidden px-3.5 py-2 rounded-xl bg-brand text-white text-xs font-extrabold shrink-0">Contacter le professeur</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- MOBILE BOTTOM NAV -->
+    <nav class="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 shadow-[0_-4px_12px_rgba(0,0,0,0.06)] md:hidden no-print">
+        <div class="grid grid-cols-3 h-16">
+            <button type="button" onclick="switchTab('sim')" id="mob-tab-sim" class="mob-tab flex flex-col items-center justify-center text-[11px]"><span class="text-lg">🧮</span>Comparateur</button>
+            <button type="button" onclick="switchTab('news')" id="mob-tab-news" class="mob-tab flex flex-col items-center justify-center text-[11px]"><span class="text-lg">📋</span>Fiscalité 2026</button>
+            <button type="button" onclick="switchTab('pitch')" id="mob-tab-pitch" class="mob-tab flex flex-col items-center justify-center text-[11px]"><span class="text-lg">⚙️</span>Réglages</button>
+        </div>
+    </nav>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 text-[11px] mt-8 py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-3">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-3 border-b border-slate-800">
+                <p class="text-slate-300">Outil pédagogique gratuit, conçu par M. Nguon avec ses élèves de Bac Pro MCV — Lycée Georges Brassens, Villepinte • Périodes de formation en milieu professionnel (PFMP)</p>
+                <a href="#" data-contact class="hidden px-3.5 py-2 rounded-xl bg-amber-400 text-slate-950 font-extrabold shrink-0 no-print">Proposer un stage / contacter le professeur</a>
+            </div>
+            <p class="leading-relaxed"><strong class="text-slate-200">Mentions :</strong> simulation indicative et non contractuelle, réalisée à partir des offres saisies. Ce document ne constitue ni une offre de location ou de crédit, ni un conseil fiscal, ni un acte d'intermédiation. Aucune donnée client n'est enregistrée par l'outil.</p>
+            <p class="text-right font-semibold" id="footer-right-label">Repères fiscaux 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        // ================================================================
+        // CONFIGURATION — adresse e-mail du professeur pour les boutons
+        // « Contacter ». Tant qu'elle est vide, ces boutons restent masqués.
+        const CONTACT_EMAIL = 'r.nguon75@gmail.com';
+        // ================================================================
+
+        const state = { tab: 'sim', category: 'VUL', duration: 48, resaleManual: false, theme: 'teal' };
+        let last = null;
+
+        const themes = {
+            teal:   { primary: '#0f766e', light: '#f0fdfa', border: '#99f6e4' },
+            blue:   { primary: '#1d4ed8', light: '#eff6ff', border: '#bfdbfe' },
+            red:    { primary: '#b91c1c', light: '#fef2f2', border: '#fecaca' },
+            black:  { primary: '#18181b', light: '#f4f4f5', border: '#d4d4d8' },
+            yellow: { primary: '#a16207', light: '#fefce8', border: '#fde047' }
+        };
+
+        // Exemples (valeurs fictives, à remplacer par les offres de la concession)
+        const PRESETS = {
+            artisan:  { category: 'VUL', qty: 1, price: 28000, duration: 48, km: 25000, lldFirst: 0,    lldRent: 460, lldMaint: true, loaFirst: 2800, loaRent: 380, loaOption: 9200,  rate: 6.4, apport: 0, maint: 65, legal: 'EI' },
+            flotte:   { category: 'VUL', qty: 3, price: 28000, duration: 48, km: 30000, lldFirst: 0,    lldRent: 470, lldMaint: true, loaFirst: 2800, loaRent: 390, loaOption: 8800,  rate: 6.4, apport: 0, maint: 70, legal: 'SOC' },
+            citadine: { category: 'VP',  qty: 1, price: 22000, duration: 36, km: 20000, lldFirst: 1500, lldRent: 340, lldMaint: true, loaFirst: 2200, loaRent: 300, loaOption: 9900,  rate: 6.4, apport: 0, maint: 35, legal: 'SOC' },
+            suv:      { category: 'VP',  qty: 1, price: 42000, duration: 36, km: 25000, lldFirst: 3000, lldRent: 590, lldMaint: true, loaFirst: 4200, loaRent: 520, loaOption: 18500, rate: 6.4, apport: 0, maint: 45, legal: 'SOC' }
+        };
+
+        const $ = (id) => document.getElementById(id);
+        const num = (id, d = 0) => { const v = parseFloat($(id).value); return isNaN(v) ? d : v; };
+        const eur = (v) => Math.round(v).toLocaleString('fr-FR') + ' €';
+        const pmt = (P, ratePct, n) => { if (P <= 0) return 0; const r = ratePct / 1200; return r === 0 ? P / n : P * r / (1 - Math.pow(1 + r, -n)); };
+
+        // Valeur de revente indicative selon durée et kilométrage
+        function defaultResalePct(duration, km) {
+            const base = { 24: 62, 36: 52, 48: 43, 60: 35 }[duration] || 43;
+            return Math.max(15, Math.min(75, Math.round(base - ((km - 20000) / 5000) * 2)));
+        }
+
+        function readInputs() {
+            return {
+                category: state.category,
+                legal: $('input-legal').value,
+                qty: Math.max(1, Math.round(num('input-qty', 1))),
+                price: num('input-price'),
+                duration: state.duration,
+                km: num('input-km', 25000),
+                lldFirst: num('lld-first'), lldRent: num('lld-rent'), lldMaint: $('lld-maint').checked,
+                loaFirst: num('loa-first'), loaRent: num('loa-rent'), loaOption: num('loa-option'),
+                rate: num('credit-rate'), apport: num('credit-apport'),
+                maint: num('maint-month'), resalePct: num('resale-pct')
+            };
+        }
+
+        // Paiements sur n mois : 1er loyer majoré + (n − 1) loyers, ou n loyers s'il n'y a pas de 1er loyer majoré
+        const rentTotal = (first, rent, n) => first > 0 ? first + rent * (n - 1) : rent * n;
+
+        function compute(inp) {
+            const n = inp.duration;
+            // Voiture de tourisme : TVA non récupérable => coût réel TTC. Utilitaire : coût HT.
+            const vat = inp.category === 'VP' ? 1.2 : 1;
+            const q = inp.qty;
+            const price = inp.price * vat;
+            const maint = inp.maint * vat;
+            const resale = price * inp.resalePct / 100;
+
+            const apport = Math.min(inp.apport * vat, price);
+            const creditMonthly = pmt(price - apport, inp.rate, n);
+
+            const options = [
+                { key: 'cash', name: 'Comptant', owner: 'Le client', risk: 'Client',
+                  upfront: price, monthly: maint, total: price + maint * n - resale, resaleCounted: true },
+                { key: 'credit', name: 'Crédit', owner: 'Le client', risk: 'Client',
+                  upfront: apport, monthly: creditMonthly + maint, total: apport + creditMonthly * n + maint * n - resale, resaleCounted: true },
+                { key: 'loa', name: 'LOA', owner: 'Organisme financier', risk: 'Organisme financier',
+                  upfront: inp.loaFirst * vat, monthly: inp.loaRent * vat + maint,
+                  total: rentTotal(inp.loaFirst, inp.loaRent, n) * vat + maint * n, resaleCounted: false },
+                { key: 'lld', name: 'LLD', owner: 'Le loueur', risk: 'Loueur',
+                  upfront: inp.lldFirst * vat, monthly: inp.lldRent * vat + (inp.lldMaint ? 0 : maint),
+                  total: rentTotal(inp.lldFirst, inp.lldRent, n) * vat + (inp.lldMaint ? 0 : maint * n), resaleCounted: false }
+            ];
+            options.forEach(o => { o.upfront *= q; o.monthly *= q; o.total *= q; });
+            const minUpfront = Math.min(...options.map(o => o.upfront));
+            const minTotal = Math.min(...options.map(o => o.total));
+            options.forEach(o => { o.bestUpfront = Math.abs(o.upfront - minUpfront) < 1; o.bestTotal = Math.abs(o.total - minTotal) < 1; });
+            const cash = options[0], lld = options[3];
+            return { inp, vat, options, cashPreserved: cash.upfront - lld.upfront, priceTTC: inp.price * 1.2 };
+        }
+
+        // ---------------- Rendu ----------------
+        function calculateAll() {
+            if (!state.resaleManual) $('resale-pct').value = defaultResalePct(state.duration, num('input-km', 25000));
+            const r = compute(readInputs());
+            last = r;
+            const inp = r.inp;
+            $('lbl-km').textContent = inp.km.toLocaleString('fr-FR') + ' km';
+            $('compare-basis').textContent = `${inp.qty} véh. • ${inp.duration} mois • ${inp.category === 'VP' ? 'montants TTC (TVA non récupérable)' : 'montants HT'}`;
+
+            const color = { cash: 'border-slate-300', credit: 'border-slate-300', loa: 'border-sky-300', lld: 'border-emerald-300' };
+            $('compare-grid').innerHTML = r.options.map(o => `
+                <div class="rounded-xl border-2 ${color[o.key]} p-3.5 space-y-2">
+                    <div class="flex items-center justify-between gap-2">
+                        <span class="text-sm font-extrabold text-slate-900">${o.name}</span>
+                        <span class="text-[10px] font-bold text-slate-500">Propriétaire : ${o.owner}</span>
+                    </div>
+                    <div class="flex flex-wrap gap-1">
+                        ${o.bestUpfront ? '<span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">Moins de trésorerie au départ</span>' : ''}
+                        ${o.bestTotal ? '<span class="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-amber-100 text-amber-900">Coût total le plus bas</span>' : ''}
+                    </div>
+                    <dl class="text-xs space-y-1">
+                        <div class="flex justify-between"><dt class="text-slate-500">Au départ</dt><dd class="font-extrabold num">${eur(o.upfront)}</dd></div>
+                        <div class="flex justify-between"><dt class="text-slate-500">Par mois</dt><dd class="font-extrabold num">${eur(o.monthly)}</dd></div>
+                        <div class="flex justify-between border-t border-slate-100 pt-1"><dt class="text-slate-500">Coût total net</dt><dd class="font-black num text-slate-900">${eur(o.total)}</dd></div>
+                    </dl>
+                    <p class="text-[10px] text-slate-500 leading-snug">${o.resaleCounted ? 'Revente estimée déduite. ' : 'Véhicule rendu en fin de contrat. '}Risque de revente : ${o.risk}.</p>
+                </div>`).join('');
+
+            const lldMaintTxt = inp.lldMaint ? "l'entretien est compris dans le loyer LLD" : "l'entretien est ajouté à toutes les solutions";
+            $('compare-note').textContent = `Coût total net = départ + mensualités sur ${inp.duration} mois − revente estimée (comptant et crédit, ${inp.resalePct} % du prix). Ici, ${lldMaintTxt}. La LOA est comptée sans lever l'option d'achat (${eur(inp.loaOption * r.vat * inp.qty)} pour racheter). Ne sont pas comptés : le coût de l'argent immobilisé (comptant) et les économies d'impôt (voir les points fiscaux).`;
+
+            renderFiscal(r);
+            updatePitchText(r);
+            updateLeadState();
+        }
+
+        function renderFiscal(r) {
+            const inp = r.inp;
+            const items = [];
+            if (inp.category === 'VUL') {
+                items.push("🚐 <strong>Utilitaire :</strong> TVA récupérable sur le prix, les loyers et l'entretien si le véhicule sert à l'activité. Les montants sont donc comparés hors taxes.");
+                items.push("📉 <strong>Pas de plafond d'amortissement</strong> : tout le prix d'achat peut être amorti.");
+                items.push("⚠️ Pick-up double cabine ou utilitaire à deux rangs de places : il peut être traité comme une voiture de tourisme. À vérifier avec l'expert-comptable.");
+            } else {
+                items.push("⚡ <strong>Voiture de tourisme :</strong> TVA non récupérable sur le prix et les loyers, d'où une comparaison TTC. La TVA sur l'électricité de recharge, elle, se récupère.");
+                if (r.priceTTC > 30000) {
+                    const pct = Math.round((r.priceTTC - 30000) / r.priceTTC * 100);
+                    items.push(`📉 <strong>Plafond d'amortissement de 30 000 € TTC</strong> : avec un prix de ${eur(r.priceTTC)} TTC, environ <strong>${pct} %</strong> de l'amortissement (achat) ou de la part « amortissement » des loyers (LOA, LLD) n'est pas déductible.`);
+                } else {
+                    items.push(`📉 Prix de ${eur(r.priceTTC)} TTC, sous le <strong>plafond d'amortissement de 30 000 €</strong> : amortissement entièrement déductible.`);
+                }
+                items.push("✅ <strong>Aucun malus en 2026</strong> (ni CO2, ni poids) et <strong>exonération des taxes annuelles</strong> CO2 et polluants.");
+                if (inp.legal === 'SOC') {
+                    items.push("👔 Si la voiture est confiée à un salarié avec usage privé : <strong>abattement de 70 %</strong> sur l'avantage en nature (forfait), plafonné à 4 641,60 € en 2026, si le modèle a l'éco-score.");
+                } else {
+                    items.push("👤 <strong>Entreprise individuelle :</strong> la part d'usage privé du véhicule n'est pas déductible ; l'entreprise est de toute façon exonérée des taxes annuelles CO2 et polluants.");
+                }
+            }
+            items.push("🏙️ <strong>ZFE</strong> toujours en vigueur : l'accès dépend de la vignette Crit'Air, pas du type de véhicule.");
+            $('fiscal-list').innerHTML = items.map(t => `<li>${t}</li>`).join('');
+        }
+
+        function updatePitchText(r) {
+            if (!$('pitch-demo-text')) return; // version entreprise : pas de pitch
+            const cash = r.options[0], lld = r.options[3];
+            const what = r.inp.category === 'VUL' ? `${r.inp.qty} utilitaire${r.inp.qty > 1 ? 's' : ''}` : `${r.inp.qty} voiture${r.inp.qty > 1 ? 's' : ''} électrique${r.inp.qty > 1 ? 's' : ''}`;
+            $('pitch-demo-text').textContent = `« Regardez : pour ${what}, payer comptant sort ${eur(cash.upfront)} de trésorerie le premier jour. Avec votre offre LLD, c'est ${eur(lld.upfront)} au départ, puis ${eur(lld.monthly)} par mois${r.inp.lldMaint ? ', entretien compris' : ''}. L'outil montre aussi le coût total de chaque solution, pour que le client choisisse en connaissance de cause. »`;
+        }
+
+        // ---------------- Fiche contact ----------------
+        function leadReady() {
+            return $('lead-company').value.trim() && $('lead-name').value.trim() && $('lead-contact').value.trim() && $('lead-consent').checked;
+        }
+        function updateLeadState() {
+            const ready = !!leadReady();
+            const sellerEmail = $('cfg-seller-email').value.trim();
+            $('btn-copy-lead').disabled = !ready;
+            $('btn-mail-lead').disabled = !ready || !sellerEmail;
+            $('lead-hint').textContent = !ready
+                ? "Remplissez les champs * et cochez l'accord du client pour activer les boutons."
+                : (sellerEmail ? 'Fiche prête.' : "Fiche prête. Pour l'envoyer par e-mail, renseignez l'e-mail du vendeur dans l'onglet Personnaliser (ou copiez-la).");
+        }
+        function leadText() {
+            const r = last, inp = r.inp, cfg = readConfig();
+            const lines = [
+                `FICHE CONTACT — ${(cfg.dealer || 'CONCESSION').toUpperCase()}`,
+                `Transmise avec l'accord du client.`,
+                ``,
+                `Entreprise : ${$('lead-company').value.trim()}${$('lead-siren').value.trim() ? ' (SIREN ' + $('lead-siren').value.trim() + ')' : ''} — ${inp.legal === 'EI' ? 'entreprise individuelle' : 'société'}`,
+                `Contact : ${$('lead-name').value.trim()} — ${$('lead-contact').value.trim()}`,
+                `Besoin : ${$('lead-need').value.trim() || 'non précisé'}`,
+                ``,
+                `Simulation : ${inp.qty} × ${inp.category === 'VUL' ? 'utilitaire' : 'voiture électrique'} à ${eur(inp.price)} HT, ${inp.duration} mois, ${inp.km.toLocaleString('fr-FR')} km/an`,
+                ...r.options.map(o => `• ${o.name} : ${eur(o.upfront)} au départ, ${eur(o.monthly)}/mois, coût total net ${eur(o.total)}`),
+                ``,
+                `Préparé par : ${cfg.student || 'élève de Bac Pro MCV'} — Lycée Georges Brassens (Villepinte)`,
+                `Simulation indicative réalisée à partir des offres de la concession.`
+            ];
+            return lines.join('\n');
+        }
+        function copyLead() {
+            if (!leadReady()) return;
+            const text = leadText();
+            const fallback = () => {
+                const ta = document.createElement('textarea'); ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+                document.body.appendChild(ta); ta.select();
+                let ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+                document.body.removeChild(ta);
+                showToast(ok ? 'Fiche copiée.' : 'Copie impossible sur cet appareil.');
+            };
+            if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(text).then(() => showToast('Fiche copiée.')).catch(fallback);
+            else fallback();
+        }
+        function mailLead() {
+            const email = $('cfg-seller-email').value.trim();
+            if (!leadReady() || !email) return;
+            const subject = encodeURIComponent(`Contact pro : ${$('lead-company').value.trim()}`);
+            window.location.href = `mailto:${email}?subject=${subject}&body=${encodeURIComponent(leadText())}`;
+        }
+
+        // ---------------- Réglages ----------------
+        function readConfig() {
+            return {
+                dealer: $('cfg-dealer').value.trim(), brand: $('cfg-brand').value.trim(), city: $('cfg-city').value.trim(),
+                financer: $('cfg-financer').value.trim(), seller: $('cfg-seller').value.trim(), sellerEmail: $('cfg-seller-email').value.trim(),
+                student: $('cfg-student') ? $('cfg-student').value.trim() : '', theme: state.theme
+            };
+        }
+        function applyConfig() {
+            const c = readConfig();
+            const dealer = c.dealer || 'votre concession';
+            const where = c.city ? ` (${c.city})` : '';
+            $('header-dealer-badge').textContent = c.dealer ? `${c.dealer}${c.city ? ' • ' + c.city : ''}` : 'Concession partenaire';
+            $('student-banner-badge').textContent = c.student ? `Présenté par ${c.student}` : 'Présenté par un élève de Bac Pro MCV';
+            $('student-banner-title').textContent = `Outil configuré pour ${dealer}${where}${c.brand ? ' — ' + c.brand : ''}`;
+            $('financer-hint').textContent = c.financer
+                ? `Recopiez les offres remises par le vendeur (financement : ${c.financer}). Les valeurs affichées au départ sont des exemples.`
+                : 'Recopiez les offres remises par le vendeur. Les valeurs affichées au départ sont des exemples.';
+            $('lead-dest').textContent = c.seller || c.sellerEmail
+                ? `Destinataire : ${c.seller || ''}${c.seller && c.sellerEmail ? ' — ' : ''}${c.sellerEmail || ''} (${dealer})`
+                : "Destinataire : vendeur à renseigner dans l'onglet Personnaliser.";
+            $('lead-consent-text').textContent = `Le client accepte que ses coordonnées soient transmises à ${dealer} pour être recontacté au sujet de ce projet. Elles ne sont pas enregistrées par cet outil ni transmises à quelqu'un d'autre.`;
+            $('footer-right-label').textContent = `${c.dealer ? c.dealer + ' • ' : ''}Repères fiscaux 2026`;
+            updateLeadState();
+        }
+        function saveConfig() {
+            applyConfig();
+            try { localStorage.setItem('qualifflotte_cfg_2026', JSON.stringify(readConfig())); } catch (e) {}
+        }
+        function setTheme(key) {
+            state.theme = themes[key] ? key : 'teal';
+            const t = themes[state.theme], root = document.documentElement;
+            root.style.setProperty('--brand-primary', t.primary);
+            root.style.setProperty('--brand-light', t.light);
+            root.style.setProperty('--brand-border', t.border);
+            document.querySelectorAll('[data-theme-btn]').forEach(b => {
+                const on = b.dataset.themeBtn === state.theme;
+                b.classList.toggle('ring-4', on); b.classList.toggle('ring-white', on);
+            });
+            saveConfig();
+            paintButtons();
+        }
+
+        // ---------------- Interface ----------------
+        let toastTimer;
+        function showToast(msg) {
+            const t = $('toast'); $('toast-message').textContent = msg;
+            t.classList.remove('hidden', 'opacity-0', '-translate-y-2');
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(() => { t.classList.add('opacity-0', '-translate-y-2'); setTimeout(() => t.classList.add('hidden'), 300); }, 3000);
+        }
+        function paintButtons() {
+            const on = 'bg-brand text-white border-brand font-extrabold', off = 'bg-slate-50 text-slate-700 border-slate-200 font-bold hover:bg-slate-100';
+            document.querySelectorAll('.dur-btn').forEach(b => {
+                b.className = `dur-btn min-h-[42px] rounded-xl text-xs border ${parseInt(b.dataset.dur, 10) === state.duration ? on : off}`;
+            });
+            ['VUL', 'VP'].forEach(c => {
+                $('btn-cat-' + c.toLowerCase()).className = `cat-btn p-2.5 rounded-xl border-2 text-left ${state.category === c ? 'border-brand bg-brand-light' : 'border-slate-200 bg-slate-50'}`;
+            });
+        }
+        function setCategory(c) { state.category = c; paintButtons(); calculateAll(); }
+        function onResaleEdited() { state.resaleManual = true; calculateAll(); }
+        function switchTab(tab) {
+            state.tab = tab;
+            ['sim', 'news', 'pitch'].forEach(t => {
+                const active = t === tab;
+                $('tab-content-' + t).classList.toggle('hidden', !active);
+                $('desk-tab-' + t).className = `desk-tab px-4 py-2 rounded-xl text-xs font-extrabold uppercase tracking-wider ${active ? 'bg-white text-slate-900 shadow-sm' : 'text-white/90 hover:bg-white/15'}`;
+                $('mob-tab-' + t).className = `mob-tab flex flex-col items-center justify-center text-[11px] ${active ? 'text-brand font-extrabold border-t-2 border-brand bg-brand-light' : 'text-slate-500 font-semibold'}`;
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        function loadPreset(key) {
+            const p = PRESETS[key];
+            state.category = p.category; state.duration = p.duration; state.resaleManual = false;
+            $('input-qty').value = p.qty; $('input-price').value = p.price; $('input-km').value = p.km;
+            $('input-legal').value = p.legal;
+            $('lld-first').value = p.lldFirst; $('lld-rent').value = p.lldRent; $('lld-maint').checked = p.lldMaint;
+            $('loa-first').value = p.loaFirst; $('loa-rent').value = p.loaRent; $('loa-option').value = p.loaOption;
+            $('credit-rate').value = p.rate; $('credit-apport').value = p.apport; $('maint-month').value = p.maint;
+            document.querySelectorAll('.preset-btn').forEach(b => {
+                b.className = `preset-btn px-3 py-2 rounded-xl border text-left ${b.dataset.preset === key ? 'border-brand bg-brand-light border-2' : 'border-slate-200 bg-slate-50 hover:bg-slate-100'}`;
+            });
+            paintButtons();
+            calculateAll();
+        }
+        function setupContactButtons() {
+            const subject = encodeURIComponent("Accueil d'un stagiaire Bac Pro MCV — Lycée Georges Brassens (Villepinte)");
+            const body = encodeURIComponent("Bonjour Monsieur Nguon,\n\nSuite à la présentation de l'outil Qualif'Flotte par votre élève, nous souhaitons échanger avec vous au sujet de l'accueil d'un stagiaire (PFMP) dans notre concession.\n\nCordialement,");
+            document.querySelectorAll('[data-contact]').forEach(a => {
+                if (CONTACT_EMAIL) { a.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`; a.classList.remove('hidden'); }
+                else a.classList.add('hidden');
+            });
+        }
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.dur-btn').forEach(b => b.addEventListener('click', () => {
+                state.duration = parseInt(b.dataset.dur, 10); paintButtons(); calculateAll();
+            }));
+            document.querySelectorAll('.preset-btn').forEach(b => b.addEventListener('click', () => {
+                loadPreset(b.dataset.preset);
+                showToast('Exemple chargé : remplacez les offres par celles de la concession.');
+            }));
+            try {
+                const c = JSON.parse(localStorage.getItem('qualifflotte_cfg_2026') || 'null');
+                if (c) {
+                    ['dealer', 'brand', 'city', 'financer', 'seller', 'student'].forEach(k => { if (c[k] && $('cfg-' + k)) $('cfg-' + k).value = c[k]; });
+                    if (c.sellerEmail) $('cfg-seller-email').value = c.sellerEmail;
+                    if (c.theme) state.theme = c.theme;
+                }
+            } catch (e) {}
+            setupContactButtons();
+            setTheme(state.theme);
+            switchTab('sim');
+            loadPreset('artisan');
+            applyConfig();
+        });
+    </script>
+</body>
+</html>
